@@ -21,7 +21,7 @@ const ProductList = ({ type }) => {
             <li key={index}>
               <h4>{item.name} </h4>
               <p>Valor: {item.price}</p>
-              <Button type={type} item={item} />
+              <Button type={type} item={item} color='green' />
             </li>
           ))}
         {type === "cart" &&
@@ -29,7 +29,7 @@ const ProductList = ({ type }) => {
             <li key={index}>
               <h4>{item.name} </h4>
               <p>Valor: {item.price}</p>
-              <Button type={type} item={item} />
+              <Button type={type} item={item} color='red'/>
             </li>
           ))}
         </List>
